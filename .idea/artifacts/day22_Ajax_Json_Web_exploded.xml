@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day22_Ajax&amp;Json:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day22_Ajax_Json_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day22_Ajax&amp;Json/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day22_Ajax&amp;Json" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib4" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

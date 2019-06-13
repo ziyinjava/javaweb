@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        function fun(){
+            // $.ajax({
+            //     url:"/day22/ajaxServlet",
+            //     type:"POST",
+            //     data:{"username":"zs","age":12},
+            //     dataType:"text",
+            //     cache:false,
+            //     success:function (data) {
+            //         alert(data);
+            //     },
+            //     error:function () {
+            //         alert("出错了..");
+            //     }
+            // });
+
+            // $.get("/day22/ajaxServlet",{"username":"zs","age":12},function (data) {
+            //     alert(data);
+            // },"text");
+
+            // $.post("/day22/ajaxServlet",{"username":"zs","age":12},function (data) {
+            //     alert(data);
+            // },"text");
+
+
+            var person = {"name": "张三", age: 23, 'gender': true};
+
+            // for (key in person) {
+            //     alert(key + " : " + person[key]);
+            // }
+
+            //  var name = person["name"];
+          //  alert(name);
+
+            // var persons = {
+            //     "persons": [
+            //         {"name": "张三", "age": 23, "gender": true},
+            //         {"name": "李四", "age": 24, "gender": true},
+            //         {"name": "王五", "age": 25, "gender": false}
+            //     ]
+            // };
+
+           // alert(persons.persons[2].name);
+
+            var ps = [{"name": "张三", "age": 23, "gender": true},
+                {"name": "李四", "age": 24, "gender": true},
+                {"name": "王五", "age": 25, "gender": false}];
+
+           //alert(ps[1].name);
+
+            for (var i = 0; i < ps.length; i++) {
+                var person = ps[i];
+                for (key in person) {
+                    alert(key + " : " + person[key]);
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="发送异步请求" onclick="fun();">
+<input>
+</body>
+</html>

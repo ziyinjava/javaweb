@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery快速入门</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div id="div1">div1....</div>
+    <div id="div2">div2....</div>
+
+
+
+<script>
+    var divs = document.getElementsByTagName("div");
+
+    for (var i = 0; i < divs.length; i++) {
+        //divs[i].innerHTML="aaa";
+        $(divs[i]).html("ccc");
+    }
+
+    var $divs = $("div");
+
+   // $divs.html("bbb");
+
+
+    $divs[0].innerHTML = "ddd";
+    $divs.get(1).innerHTML = "eee";
+
+    alert(divs.length);  //[object HTMLCollection]
+    alert($divs.length); //[object Object]
+
+
+
+
+</script>
+
+</body>
+</html>

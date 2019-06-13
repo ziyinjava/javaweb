@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day17_el&amp;jstl:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day17_el_jstl_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day17_el&amp;jstl/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day17_el&amp;jstl" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
